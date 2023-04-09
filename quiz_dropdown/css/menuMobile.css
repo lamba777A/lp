@@ -1,0 +1,66 @@
+.mobileMobile__active{
+  color: black;
+  font-size: 1.3rem;
+  background: #fff;
+  padding: 6px 12px;
+  font-weight: 400 ;
+  line-height: bold;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px;
+  align-items: center;
+  transition: all 0.3 ease;
+}
+
+.mobileMobile__active::before{
+  margin-right: 4px;
+  margin-bottom: 0.35rem;
+  content: '';
+  display: inline-block;
+  height: 2px;
+  width: 12px;
+  background: black;
+  box-shadow: 0 4px black, 0 -4px black;
+}
+
+.container__duvidas{
+  display: block;
+  padding: 1rem;
+  position: absolute;
+  width: 100%;
+  top: 95%;
+  left: 0;
+  transition: .6s;
+  background: #FBAA00;
+  z-index: 1000;
+  color: #fff;
+}
+
+.container__duvidas.hidden{
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.3 ease;
+}
+
+.container__duvidas--active{
+  display: block;
+  padding: 1rem;
+  position: absolute;
+  width: 100%;
+  bottom: -7rem;
+  left: 0;
+  transition: .6s;
+  background: #FBAA00;
+  z-index: 1000;
+  color: #fff;
+}
+
+.container__duvidas li{
+  width: 100%;
+  padding: 0.5rem 0;
+  margin: 0 auto;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05)
+}

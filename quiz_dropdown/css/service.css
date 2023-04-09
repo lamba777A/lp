@@ -1,0 +1,55 @@
+.service__container{
+  text-align: center;
+  max-width: 100%;
+  width: 100%;
+  padding: 3rem;
+  padding-right: 0;
+}
+
+.service__container h2{
+  margin-bottom: 1rem;
+}
+
+.service__content {
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+}
+
+.content__right{
+  max-width: 60%;
+  height: auto;
+  padding: 1.5rem;
+}
+
+.content__right img{
+  height: auto;
+  border-radius: 10px ;
+  width: 100%;
+}
+
+.content__left{
+  max-width: 40%;
+  padding: 1rem;
+}
+
+.content__left div{
+  text-align: left;
+  padding: 1rem;
+  background-color: rgb(255, 184, 34);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  color: #45484b
+}
+
+.content__left div h3{
+  line-height: 1.5;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.content__left div p{
+  line-height: 1.6;
+  font-size: 16px;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dropdown Example</title>
+</head>
+<body>
+	<label for="dropdown">Выберите элемент:</label>
+	<select id="dropdown">
+		<option value="option1">Вариант 1</option>
+		<option value="option2">Вариант 2</option>
+		<option value="option3">Вариант 3</option>
+	</select>
+	<script>
+		var dropdown = document.getElementById("dropdown");
+		dropdown.addEventListener("change", function() {
+			var selectedOption = dropdown.options[dropdown.selectedIndex].value;
+			console.log("Выбран " + selectedOption);
+		});
+	</script>
+</body>
+</html>
