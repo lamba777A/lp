@@ -1,9 +1,6 @@
 .form1 {
-    position: relative;
-    border: 0px solid #FBAA00 !important;
     font-size: 16px;
-    max-width: 100%;
-    width: 40%;
+    width: 70%;
     font-family: Inter, sans-serif;
     border-radius: 3px;
     box-shadow: 0 4px 4px rgba(87,100,126,.21);
@@ -11,19 +8,17 @@
 }
 
 .form1header {
-    color: #000000;
-    border-radius: 1em;
-    background-color: #FBAA00;
-    font-weight: bold;
-    padding: 15px 20px;
+    color: black;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
     font-family: Inter, sans-serif;
-    font-size: 1.5em;
 }
 
 .form1body1 {
     font-family: Inter, sans-serif;
     font-size: 16px;
-    margin: 10px 4px 12px;
+    margin: 5% 15%;
     padding: 12px 10px;
 }
 
@@ -48,6 +43,8 @@
     font-size: 1.2em;
     padding-left: 1%;
     border-radius: 1em;
+    height: 35px;
+    width: 75%;
 }
 
 #input1_1_id {
@@ -66,7 +63,7 @@
 .form1body2 {
     font-family: Inter, sans-serif;
     font-size: 16px;
-    margin: 12px 4px;
+    margin: 5% 15%;
     padding: 12px 10px;
 }
 
@@ -87,10 +84,13 @@
 }
 
 .content_form1body2 select {
+    opacity: 1;
     font-family: Inter sans-serif;
     font-size: 1.2em;
     padding-left: 1%;
     border-radius: 1em;
+    height: 35px;
+    width: 75%;
 }
 
 #input2_1_id {
@@ -107,25 +107,25 @@
 }
 
 .form1footer {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 30px 52px;
-    border-top: 1px solid #FBAA00;
+    margin: 0 auto;
+    width: 80%;
 }
 
-.button_form1footer {
-    appearance: auto;
-    writing-mode: horizontal-tb !important;
-    text-rendering: auto;
-    letter-spacing: normal;
-    word-spacing: normal;
-    line-height: normal;
-    text-transform: none;
-    text-indent: 0px;
-    margin: 0em;
-    padding: 1px 6px;
+.button_form1footer button {
+    display: block;
+    border: 0px;
+    font-weight: 600;
+    background-color: #FFB822;
+    font-size: 24px;
+    border-radius: 10rem;
+    margin: 0 auto;
+    height: 45px;
+    width: 100%;
+}
+
+.button_form1footer button:hover {
+    box-shadow: 0px 0px 1px 2px white;
+    cursor: pointer;
 }
 
 .content_form1body1 p {

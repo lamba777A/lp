@@ -14,7 +14,9 @@
 
 .up__content{
   margin: 0;
-  display: flex;  
+  justify-content: center;
+  display: flex;
+  font-size: 38px;  
   align-items: center;
 }
 
@@ -34,6 +36,7 @@
   font-size: 24px;
   margin-bottom: 0.5rem;
   color: #161c2d;
+  margin: 3% 0;
 }
 
 .main__down{
@@ -47,7 +50,7 @@
 
 .main__container button {
   letter-spacing: 1.7px;
-  width: 300px;
+  width: 400px;
   position: relative;
   background-color: rgb(255, 184, 34);
   padding: 10px 10px;
@@ -66,7 +69,7 @@
   margin-top: 1rem;
   line-height: 1.5;
   font-weight: 600;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   letter-spacing: 1px;
   margin-bottom: 0.5rem;
   color: #161c2d;
