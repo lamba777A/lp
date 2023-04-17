@@ -15,10 +15,25 @@
     font-family: Inter, sans-serif;
 }
 
+.general_body_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form_body_container_one {
+    width: 33%;
+}
+
+.form_body_container_two {
+    width: 20%;
+}
+
 .form1body1 {
     font-family: Inter, sans-serif;
+    width: 100%;
     font-size: 16px;
-    margin: 5% 15%;
+    margin: 5% 0;
     padding: 12px 10px;
 }
 
@@ -44,7 +59,7 @@
     padding-left: 1%;
     border-radius: 1em;
     height: 35px;
-    width: 75%;
+    width: 100%;
 }
 
 #input1_1_id {
@@ -63,7 +78,8 @@
 .form1body2 {
     font-family: Inter, sans-serif;
     font-size: 16px;
-    margin: 5% 15%;
+    width: 100%;
+    margin: 5% 0;
     padding: 12px 10px;
 }
 
@@ -90,7 +106,7 @@
     padding-left: 1%;
     border-radius: 1em;
     height: 35px;
-    width: 75%;
+    width: 100%;
 }
 
 #input2_1_id {

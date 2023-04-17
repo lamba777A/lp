@@ -260,42 +260,46 @@
           <div class="form1header" id="down">
             Responda a estas dos preguntas para obtener <strong><b>descuento del 20%</b></strong>:
           </div>
-          <div class="form1body1">
-            <div class="description_form1body1">
-              ¿Para qué usará Adheart? <span>*</span>
-            </div>
-            <div class="content_form1body1">
-              <select id="select1_id" onchange="showInput1()">
-                <option value="option1_1"> Analizar competidores</option>
-                <option value="option1_2"> Encontrar nuevas ideas creativas</option>
-                <option value="option1_3"> Buscar productos relevantes, su propia respuesta</option>
-                <option value="option1_4"> Other</option>
-              </select>
-              <p><input id="input1_1_id" type="text" placeholder="Please type another option here" style="display:none"></p>
-            </div>
-          </div>
+          <div class="general_body_container">
+            <div class="form_body_container_one">
+              <div class="form1body1">
+                <div class="description_form1body1">
+                  ¿Para qué usará Adheart? <span>*</span>
+                </div>
+                <div class="content_form1body1">
+                  <select id="select1_id" onchange="showInput1()">
+                    <option value="option1_1"> Analizar competidores</option>
+                    <option value="option1_2"> Encontrar nuevas ideas creativas</option>
+                    <option value="option1_3"> Buscar productos relevantes</option>
+                    <option value="option1_4"> Su propia respuesta</option>
+                  </select>
+                </div>
+              </div>
 
-          <div class="form1body2">
-            <div class="description_form1body2">
-              ¿Cuál es su ocupación? <span>*</span>
+              <div class="form1body2">
+                <div class="description_form1body2">
+                  ¿Cuál es su ocupación? <span>*</span>
+                </div>
+                <div class="content_form1body2">
+                  <select id="select2_id" onchange="showInput2()">
+                    <option value="option2_1"> CPA</option>
+                    <option value="option2_2"> Marketing de afiliados</option>
+                    <option value="option2_3"> Dropshipping</option>
+                    <option value="option2_4"> Arbitraje</option>
+                    <option value="option2_5"> Emprendedor</option>
+                    <option value="option2_6"> Agencia de marketing</option>
+                    <option value="option2_7"> Su propia respuesta</option>
+                  </select>
+                </div>
+              </div>
             </div>
-            <div class="content_form1body2">
-              <select id="select2_id" onchange="showInput2()">
-                <option value="option2_1"> CPA</option>
-                <option value="option2_2"> marketing de afiliados</option>
-                <option value="option2_3"> dropshipping</option>
-                <option value="option2_4"> arbitraje</option>
-                <option value="option2_5"> emprendedor</option>
-                <option value="option2_6"> gencia de marketing</option>
-                <option value="option2_7"> su propia respuesta</option>
-                <option value="option2_8"> Other</option>
-            </select>
-            <p><input id="input2_1_id" type="text" placeholder="Please type another option here" style="display:none"></p>
+            <div class="form_body_container_two">
+              <img height="90%" width="100%" src="images/20%garantia.png" alt />
             </div>
           </div>
           <div class="form1footer">
             <div class="button_form1footer">
-              <button type="submit">Entregar</button>
+              <button type="button" onclick="submitForm()">Regístrate ahora!</button>
             </div>
           </div>
         </form>

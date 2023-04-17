@@ -1,23 +1,31 @@
-function showInput1() {
-  var selectElement = document.getElementById("select1_id");
-  var otherInputElement = document.getElementById("input1_1_id");
+// function showInput1() {                                                          Всплывающее меню для СЕЛЕКТА ФОРМЫ 1
+//   var selectElement = document.getElementById("select1_id");
+//   var otherInputElement = document.getElementById("input1_1_id");
 
-  if (selectElement.value === "option1_4") {
-    otherInputElement.style.display = "block";
-  } else {
-    otherInputElement.style.display = "none";
-  }
-}
+//   if (selectElement.value === "option1_4") {
+//     otherInputElement.style.display = "block";
+//   } else {
+//     otherInputElement.style.display = "none";
+//   }
+// }
 
-function showInput2() {
-  var selectElement = document.getElementById("select2_id");
-  var otherInputElement = document.getElementById("input2_1_id");
+// function showInput2() {                                                          Всплывающее меню для СЕЛЕКТА ФОРМЫ 2
+//   var selectElement = document.getElementById("select2_id");
+//   var otherInputElement = document.getElementById("input2_1_id");
 
-  if (selectElement.value === "option2_8") {
-    otherInputElement.style.display = "block";
-  } else {
-    otherInputElement.style.display = "none";
-  }
+//   if (selectElement.value === "option2_8") {
+//     otherInputElement.style.display = "block";
+//   } else {
+//     otherInputElement.style.display = "none";
+//   }
+// }
+
+function submitForm() {
+  // Отправляем данные формы на сервер
+  document.querySelector('form').submit();
+
+  // Перенаправляем пользователя на другую страницу
+  window.location.href = "https://adheart.me/register";
 }
 
 window.addEventListener('popstate', function (event) {
@@ -36,17 +44,3 @@ function redirectOnUnload() {
 }
 
 window.addEventListener('beforeunload', redirectOnUnload);
-
-
-// window.addEventListener('load', function () {
-//   localStorage.setItem('redirect_url', 'https://youtube.com'); // замените этот URL на нужный
-// });
-
-// // Перенаправляем пользователя на нужную страницу, если в локальном хранилище есть соответствующее значение
-// window.addEventListener('DOMContentLoaded', function () {
-//   var redirectUrl = localStorage.getItem('redirect_url');
-//   if (redirectUrl) {
-//     localStorage.removeItem('redirect_url');
-//     window.location.href = redirectUrl;
-//   }
-// });
