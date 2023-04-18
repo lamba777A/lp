@@ -256,7 +256,8 @@
         <img src="images/adheart-find.png" alt />
       </div>
       <div class="instead_of_cta__button">
-        <form class="form1" action="#" method="post" enctype="multipart/form-data">
+        <!-- class="form1" action="#" method="post" enctype="multipart/form-data"> -->
+        <form class="form1" id="form1_id">
           <div class="form1header" id="down">
             Responda a estas dos preguntas para obtener <strong><b>descuento del 20%</b></strong>:
           </div>
@@ -267,11 +268,11 @@
                   ¿Para qué usará Adheart? <span>*</span>
                 </div>
                 <div class="content_form1body1">
-                  <select id="select1_id" onchange="showInput1()">
-                    <option value="option1_1"> Analizar competidores</option>
-                    <option value="option1_2"> Encontrar nuevas ideas creativas</option>
-                    <option value="option1_3"> Buscar productos relevantes</option>
-                    <option value="option1_4"> Su propia respuesta</option>
+                  <select name="¿Para qué usará Adheart?" id="select1_id" onchange="showInput1()">
+                    <option value="Analizar competidores"> Analizar competidores</option>
+                    <option value="Encontrar nuevas ideas creativas"> Encontrar nuevas ideas creativas</option>
+                    <option value="Buscar productos relevantes"> Buscar productos relevantes</option>
+                    <option value="Su propia respuesta"> Su propia respuesta</option>
                   </select>
                 </div>
               </div>
@@ -281,14 +282,14 @@
                   ¿Cuál es su ocupación? <span>*</span>
                 </div>
                 <div class="content_form1body2">
-                  <select id="select2_id" onchange="showInput2()">
-                    <option value="option2_1"> CPA</option>
-                    <option value="option2_2"> Marketing de afiliados</option>
-                    <option value="option2_3"> Dropshipping</option>
-                    <option value="option2_4"> Arbitraje</option>
-                    <option value="option2_5"> Emprendedor</option>
-                    <option value="option2_6"> Agencia de marketing</option>
-                    <option value="option2_7"> Su propia respuesta</option>
+                  <select name="¿Cuál es su ocupación?" id="select2_id" onchange="showInput2()">
+                    <option value="CPA"> CPA</option>
+                    <option value="Marketing de afiliados"> Marketing de afiliados</option>
+                    <option value="Dropshipping"> Dropshipping</option>
+                    <option value="Arbitraje"> Arbitraje</option>
+                    <option value="Emprendedor"> Emprendedor</option>
+                    <option value="Agencia de marketing"> Agencia de marketing</option>
+                    <option value="Su propia respuesta"> Su propia respuesta</option>
                   </select>
                 </div>
               </div>
