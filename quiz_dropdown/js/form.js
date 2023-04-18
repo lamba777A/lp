@@ -45,7 +45,7 @@ function submitForm() {
     body: json
   };
 
-  fetch('https://api.example.com/data')
+  fetch('https://api.jsonbin.io/v3/b', options)
   .then(response => window.location.href = url)
   
   .catch(err => {
