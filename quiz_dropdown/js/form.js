@@ -1,3 +1,5 @@
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // function showInput1() {                                                          Всплывающее меню для СЕЛЕКТА ФОРМЫ 1
 //   var selectElement = document.getElementById("select1_id");
 //   var otherInputElement = document.getElementById("input1_1_id");
@@ -8,6 +10,8 @@
 //     otherInputElement.style.display = "none";
 //   }
 // }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // function showInput2() {                                                          Всплывающее меню для СЕЛЕКТА ФОРМЫ 2
 //   var selectElement = document.getElementById("select2_id");
@@ -20,24 +24,16 @@
 //   }
 // }
 
-// const form = document.getElementById("form1_id");
-// form.addEventListener("submit", function(event) {
-//   document.write("G")
-//   event.preventDefault(); // отменяем стандартное поведение отправки формы
-//   const data = new FormData(form);
-//   const obj = {};
-//   data.forEach(function(value, key) {
-//     obj[key] = value;
-//   });
-//   const json = JSON.stringify(obj); 
-//   console.log(json); // выводим список аргументов в формате JSON
-// });
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function submitForm() {
   // Отправляем данные формы на сервер
   const form = document.getElementById("form1_id");
   const formData = new FormData(form);
   const json = JSON.stringify(Object.fromEntries(formData));
+
+  const url = button_id.getAttribute("data-target")
+
 
   const options = {
     method: 'POST',
@@ -48,15 +44,19 @@ function submitForm() {
     },
     body: json
   };
+
+  fetch('https://api.example.com/data')
+  .then(response => window.location.href = url)
   
-  fetch('https://api.jsonbin.io/v3/b', options)
-    .then(response => response.json())
-    .then(response => console.log(response))
-    .catch(err => console.error(err));
+  .catch(err => {
+    console.error(err);
+    window.location.href = url;
+  });
 
   // Перенаправляем пользователя на другую страницу
-  window.location.href = "https://adheart.me/register";
 }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 window.addEventListener('popstate', function (event) {
   if (event.state && event.state.redirectUrl) {
@@ -74,3 +74,5 @@ function redirectOnUnload() {                        // Переход на URL 
 }
 
 window.addEventListener('beforeunload', redirectOnUnload);
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
