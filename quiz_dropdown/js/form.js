@@ -31,8 +31,7 @@ function submitForm() {
   const form = document.getElementById("form1_id");
   const formData = new FormData(form);
   const json = JSON.stringify(Object.fromEntries(formData));
-
-  const url = button_id.getAttribute("data-target")
+  const url = button_id.getAttribute("data-target");
 
 
   const options = {
@@ -52,8 +51,6 @@ function submitForm() {
     console.error(err);
     window.location.href = url;
   });
-
-  // Перенаправляем пользователя на другую страницу
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
