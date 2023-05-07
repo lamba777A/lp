@@ -33,7 +33,6 @@ function submitForm() {
   const json = JSON.stringify(Object.fromEntries(formData));
   const url = button_id.getAttribute("data-target");
 
-
   const options = {
     method: 'POST',
     headers: {

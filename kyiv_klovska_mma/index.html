@@ -1,0 +1,56 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>MMA</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+	<div class="video-background">
+		<video autoplay loop muted>
+			<source src="img/video.mp4" type="video/mp4" />
+		</video>
+
+		<div class="wrapper">
+			<header class="header">
+				<div class="header-container">
+
+					<div class="header-logo-container">
+						<div class="logo">
+							<a href="https://www.tiktok.com/@sambo_judo_ns?_t=8c7mBLZD3jh&_r=1"><img width="60px" src="img/logo.png" /></a>
+						</div>
+						<div class="logo-text">
+							MMA
+						</div>
+					</div>
+					
+					<div class="navbar">
+						<ul>
+							<li><a href="https://docs.google.com/spreadsheets/d/10mW_fKhy7ruqYPEqs-7JxxUkSKUuPDREJqGmB_QnNKo/edit#gid=37469621"><div class="navbar-card">ТАБЛИЦА РЕЗУЛЬТАТОВ</div></a></li>
+							<li><a href="#"><div class="navbar-card">ПРИЕМЫ</div></a></li>
+							<li><a href="#"><div class="navbar-card">ПОЧТА</div></a></li>
+							<li><a href="#"><div class="navbar-card">ПРО НАС</div></a></li>
+							<li>
+								<div class="search">
+									<form action="/search" method="get">
+										<input type="text" id="search" name="q" placeholder="Зал, группа, ученик">
+										<button type="submit">Найти</button>
+									</form>
+								</div>
+							</li>
+							<li><a href="#"><div class="navbar-card-search">Войти</div></a></li>
+						</ul>
+					</div>
+				</div>
+			</header>
+		</div>
+	</div>
+	</body>
+</html>
